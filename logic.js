@@ -17,3 +17,26 @@ if (user === "user") {
             });
         }
     };
+    inquirer.prompt([{
+            name: "name",
+            message: "what is your name?",
+        },
+        {
+            name: "location",
+            message: "what is your location?",
+        }
+    ]).then(function(answers) {
+
+        var newUser = new UserSearch(answers.name, answers.location);
+        newUser.getWeather();
+        var storedData = newUser.name + " " + newUser.location + "\n"
+        fs.appendFile('txt.txt', storedData, function(err) {
+            if (err) throw err;
+            console.log('Saved!');
+        });
+    });
+}
+if (user === "admin") {
+    var adminData = fs.readFileSync('txt.txt', 'utf8');
+    console.log(adminData)
+}
