@@ -1,0 +1,24 @@
+{
+  "name": "node.weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HEYITSJ0HNNY/node.weather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HEYITSJ0HNNY/node.weather/issues"
+  },
+  "homepage": "https://github.com/HEYITSJ0HNNY/node.weather#readme",
+  "dependencies": {
+    "inquirer": "^3.2.3",
+    "weather-js": "^2.0.0"
+  }
+}
